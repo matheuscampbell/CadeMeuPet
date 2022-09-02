@@ -1,0 +1,102 @@
+
+<html lang="pt-br">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+
+    <title>Cadê meu Pet?</title>
+    <meta
+      name="description"
+      content="Uma API para você localizar seu animalzinho de estimação!"
+    />
+  </head>
+
+  <body>
+    <!-- SCRIPTS -->
+
+
+    <header>
+      <a href="/">
+        <img id="meu-pet-logo" src="/images/logo.png" alt="Cade-Meu-Pet"/>
+      </a>
+
+      <nav>
+        <a href="#sobre" id="nav_sobre">Sobre a <i>Cadê meu Pet?</i></a>
+      </nav>
+    </header>
+
+    <main>
+        
+        <!-- Seção Introdução -->
+
+        <section id="introducao">
+            <h1 id="main_title"> Cadê meu Pet? </h1>
+            <p>
+                Com a coleira Cadê meu Pet?, você consegue de modo fácil e rápido saber onde está seu amiguinho de estimação!
+            </p>
+        </section>
+
+        <!-- Seção Mapa -->
+
+        <section id="mapa_brasil">
+            <div id="map"></div>
+        </section>
+
+        <!-- Seção Sobre -->
+
+        <section id="sobre">
+            <h2> Sobre a <i>Cadê meu Pet?</i> </h2>
+            <p>
+                A <i>Cadê meu Pet?</i> é um projeto elaborado para a Semana do IoT (IoT Week) e tem por objetivo trazer mais uma solução IoT através da integração uma aplicação em nuvem a uma projeção física (em hardware).<br>
+                A proposta foi trazer uma solução simples e prática para a localização GPS de animais de estimação perdidos ou distantes do(a) dono(a). O animal terá uma coleira contendo o chip necessário para localização e, a partir desse, será possível visualizar em tempo real e de forma online onde se encontra o pet, através deste site.<br>
+            </p>
+            <span>Desenvolvedores:</span>
+            <ul>
+                <li>Matheus Campbell</li>
+                <li>Victor Sousa</li>
+                <li>Anna Klara Bambirra</li>
+            </ul>
+        </section>
+
+
+    </main>
+
+    <footer>
+        <a href="/">
+            <img id="meu-pet-logo" src="/images/logo.png" alt="PetVision">
+        </a>
+
+        <span>Projeto para IoT Week Puc Minas – Hackathon 2022.</span>
+
+        <div id="linkedin_links">
+
+            <a href="https://www.linkedin.com/in/matheus-rosa-campbell-67b276174" target="_blank">
+                <button class="click_linkedin">
+                    <img src="/images/linkedin_logo.png" alt="Linkedin">
+                </button>
+                <span>Matheus Campbell</span>
+            </a>
+            <a href="https://www.linkedin.com/in/victor-sousa-55244a204/" target="_blank">
+                <button class="click_linkedin">
+                    <img src="/images/linkedin_logo.png" alt="Linkedin">
+                </button>
+                <span>Victor Sousa</span>
+            </a>
+            <a href="https://www.linkedin.com/in/anna-klara-bambirra-alves-aa689a1b0" target="_blank">
+                <button class="click_linkedin">
+                    <img src="/images/linkedin_logo.png" alt="Linkedin">
+                </button>
+                <span>Anna Klara Bambirra</span>
+            </a>
+        </div>
+        
+    </footer>
+    <script src="/javascripts/jquery-3.6.1.min.js"></script>
+    <script
+            async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCys3emAX22ebipRDmkVk24V3eRMS9tTYU&libraries=&v=weekly%22%3E&callback=initializeMap"></script>
+    <script src="/javascripts/script.js"></script>
+  </body>
+</html>
