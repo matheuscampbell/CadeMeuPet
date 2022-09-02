@@ -15,6 +15,18 @@ router.get('/setLocation/:lat/:long', function(req, res, next) {
   res.send('ok');
 });
 
+router.get('/reset', function(req, res, next) {
+  var data = readJsonData();
+  data.actualLocation = {
+    "lat":0,
+    "long":0,
+    "timestamp": Date.now()
+  };
+  console.log(data.actualLocation);
+  writeJsonData(data);
+  res.send('ok');
+});
+
 router.get('/getActualLocation', function(req, res, next) {
   var data = readJsonData();
   res.send(JSON.stringify(data.actualLocation));
